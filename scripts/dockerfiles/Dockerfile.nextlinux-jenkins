@@ -1,0 +1,5 @@
+FROM centos:latest
+ENV LANG=en_US.UTF-8
+COPY update-nextlinux.sh /root/
+RUN yum -y update && yum -y install epel-release https://repo.ancho.re/nextlinux/1.1/centos/7/noarch/nextlinux-release-1.1.0-1.el7.centos.noarch.rpm && yum -y install nextlinux && yum clean all && nextlinux feeds sync && rm -rf /root/.nextlinux/data/* && echo >> /root/.nextlinux/conf/config.yaml && echo "log_file: '/var/log/nextlinux.log'" >> /root/.nextlinux/conf/config.yaml && echo "debug_log_file: '/var/log/nextlinux.log'" >> /root/.nextlinux/conf/config.yaml && nextlinux query
+CMD /root/update-nextlinux.sh
