@@ -1,0 +1,28 @@
+# Nextlinux configuration file
+
+#
+# nextlinux_data_dir: <default is $HOME/.nextlinux/>
+#
+# nextlinux_db_driver: 'nextlinux_image_db_fs'
+# nextlinux_db_driver_config:
+#   # only applicable to the 'nextlinux_image_db_fs' driver (default driver), path is relative to nextlinux_data_dir unless it is set to an abs path
+#   db_dir: 'data/'
+#
+# tmpdir: '/tmp'
+# log_file: '/var/log/nextlinux.log'
+# debug_log_file: '/var/log/nextlinux_debug.log'
+#
+# image_data_store: 'data/'  # deprecated but still works - should use the nextlinux_db_driver_config + db_dir settings above to control location of nextlinux data
+#
+# docker_conn: 'unix://var/run/docker.sock'
+# docker_conn_timeout: '120'
+#
+# nextlinux_auth_conn_timeout: '5'
+# nextlinux_auth_max_retries: '3'
+# nextlinux_client_url: 'https://next-linux.systems/v1/account/users'
+# nextlinux_token_url: 'https://next-linux.systems/oauth/token'
+#
+# feeds_url: 'https://next-linux.systems/v1/service/feeds'
+# feeds_conn_timeout: '10'
+# feeds_max_retries: '3'
+#
