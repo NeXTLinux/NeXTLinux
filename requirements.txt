@@ -1,0 +1,8 @@
+docker-py
+prettytable
+click
+requests
+pyyaml
+clint
+jsonschema
+enum34
