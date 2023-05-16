@@ -1,0 +1,8 @@
+include LICENSE.txt
+include requirements.txt
+include README.rst
+include CONTRIBUTING.rst
+include nextlinux/conf/*
+include nextlinux/doc/man/*
+include nextlinux/schemas/*
+recursive-include nextlinux/nextlinux-modules *
